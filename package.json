@@ -1,0 +1,39 @@
+{
+  "name": "itc230",
+  "version": "1.0.0",
+  "description": "ITC 230 - Advanced Javascript",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hvncodes/itc230-sp19.git"
+  },
+  "author": "John Nguyen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hvncodes/itc230-sp19/issues"
+  },
+  "homepage": "https://github.com/hvncodes/itc230-sp19#readme",
+  "keywords": [
+    "package"
+  ],
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "mocha": "^6.1.4"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "mongoose": "^5.5.6",
+    "nodemon": "^1.18.11"
+  }
+}

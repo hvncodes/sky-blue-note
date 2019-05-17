@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>home</title>
+    <meta name="description" content="sky blue note">
+    <meta name="keywords" content="">
+</head>
+<body>
+    <form action="/detail" method="post">
+        Raids! <br>
+        <input type="text" name="title" placeholder="e.g. Tiamat, Bahamut...">
+        <input type="submit" value="&#128269;">
+    </form>
+    {{#if items}}
+        <p>Quests: </p>
+        {{#each items}}
+            <p><a href="/detail?quest={{ quest }}">Lvl {{level}} {{boss}} {{difficulty}}</a></p>
+        {{/each}}
+    {{else}}
+        <p>Content <i>should</i> go here.</p>
+    {{/if}}
+    <pre>{{items}}</pre>
+</body>
+</html>

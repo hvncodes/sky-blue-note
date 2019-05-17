@@ -1,0 +1,13 @@
+<html>
+    <body>
+        <h2>Searching for {{title}}</h2>
+        {{#if result}}
+            <p>{{title}} deleted.</p>
+            <p># of items remaining: {{ length }}</a></p>
+            <p><a href="/">Home</a></p>
+        {{else}}
+            <p>{{title}} not deleted.</p>
+            <p><a href="/">You shouldn't be here.</a></p>
+        {{/if}}
+    </body>
+</html>
