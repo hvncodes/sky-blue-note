@@ -1,21 +1,21 @@
 {
-  "name": "itc230",
-  "version": "1.0.0",
-  "description": "ITC 230 - Advanced Javascript",
+  "name": "blue-note",
+  "version": "0.0.1",
+  "description": "a planner",
   "main": "index.js",
   "scripts": {
     "start": "nodemon ./index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hvncodes/itc230-sp19.git"
+    "url": "https://github.com/hvncodes/sky-blue-note.git"
   },
   "author": "John Nguyen",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hvncodes/itc230-sp19/issues"
+    "url": "https://github.com/hvncodes/sky-blue-note/issues"
   },
-  "homepage": "https://github.com/hvncodes/itc230-sp19#readme",
+  "homepage": "https://github.com/hvncodes/sky-blue-note#readme",
   "keywords": [
     "package"
   ],
