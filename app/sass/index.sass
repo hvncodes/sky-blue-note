@@ -1,0 +1,137 @@
+@import reset, navbar, view
+
+$grid-columns: 12
+$font-stack: Helvetica, sans-serif
+
+html
+  box-sizing: border-box
+  
+*, *:before, *:after
+  box-sizing: inherit
+
+body
+  font: 100% $font-stack
+  color: #020202
+  background-color: #fff //#efefef
+  width: 100%
+  min-width: 350px
+
+.column
+  float: left
+@for $i from 1 through $grid-columns
+  .column-#{$i}
+    //100% / $grid-columns * $i;
+    width: percentage(($i/$grid-columns))
+
+.container
+  padding: 12px
+  margin: 50px 0 //to space content from navbar
+  
+//black text #213447
+//gray text #728292
+
+//blue text #2a86e1
+//blue link #127DF2
+
+//lightblue bg #ebf7ff
+//^^border-bottom: 1px solid #e2edf6
+
+//green button #15d683
+//green button:hover
+//background: rgba(255,255,255,0.1)
+    
+//2ndary button
+//background: transparent
+//border: 1px solid #fff
+//border-radius: 3px
+
+#welcome
+  text-align: center
+  margin-top: 50px
+
+.pageHeading
+  margin: 0 0 10px 0
+  
+.fire
+  background-color: rgb(255,205,210) //#ffcdd2 //#f44336
+  &:hover
+    background-color: rgba(255,205,210,0.8)
+.water
+  background-color: rgb(187,222,251) //#bbdefb //#1E90FF
+  &:hover
+    background-color: rgba(187,222,251,0.8)
+.earth
+  background-color: rgb(215,204,200) //#d7ccc8
+  &:hover
+    background-color: rgba(215,204,200,0.8)
+.wind
+  background-color: rgb(200,230,201) //#c8e6c9
+  &:hover
+    background-color: rgba(200,230,201,0.8)
+.light
+  background-color: rgb(255,236,179) //#ffecb3
+  &:hover
+    background-color: rgba(255,236,179,0.8)
+.dark
+  background-color: rgb(209,196,233) //#d1c4e9
+  &:hover
+    background-color: rgba(209,196,233,0.8)
+
+label
+  border: 1px solid #ccc
+  padding: 3px
+  margin: 0 0 10px
+  display: block
+  overflow: auto
+  &:hover
+    //background-color: #eee //grayish highlighter
+    cursor: pointer!important
+
+input
+  &:checked+label
+    color: white
+    background-color: #2A86E1
+
+.checkboxDiv input[type="checkbox"]
+  display: none
+
+.checkboxDiv
+  .imageContainer
+    height: 50px
+    width: 75px
+    background: red
+    float: left
+    margin-right: 3px
+    img
+      max-height: 100px !important
+      max-width: 150px !important
+      height: 100% !important
+      width: 100% !important
+      object-fit: cover
+  .raidInfo
+    float: left
+    margin-left: 3px
+    .raidName, .raidCost
+      font-size: 16px
+      
+/* Finsh Button */
+.finishButton
+  -webkit-appearance: button
+  -moz-appearance: button
+  appearance: button
+  
+  display: inline
+  text-decoration: none
+  background: #15d683
+  border: 1px solid transparent
+  border-radius: 3px
+  font-size: 14px
+  padding: 12px 25px
+  color: white
+  opacity: 1
+  position: fixed
+  bottom: 4px
+  right: 4px
+  z-index: 2
+  &:hover
+    opacity: 0.9

@@ -1,0 +1,57 @@
+$primary-color: #3688f4
+$light-gray: #cccccc
+$dark-gray: #666666
+$v-dark-gray: #333333
+
+$warm: #7c7c7c //a bit darker than light-gray
+$cool: #6e7e94 //blue-ish gray
+
+.nav-top,
+.nav-bottom
+  position: fixed
+  width: 100%
+  z-index: 1
+
+.nav-top
+  top: 0
+
+.nav-bottom
+  bottom: 0
+  height: 50px
+  #bottomFill
+    min-height: 50px
+    padding: 0px !important
+  
+.nav-blue
+  color: #fff!important
+  background-color: $primary-color!important
+
+.nav-padding
+  padding: 8px 16px!important
+  
+.nav-row:after
+  content: ""
+  display: table
+  clear: both
+
+.nav-button
+  user-select: none
+  border: none
+  display: inline-block
+  padding: 8px 16px
+  vertical-align: middle
+  overflow: hidden
+  text-decoration: none
+  color: inherit
+  background-color: inherit
+  text-align: center
+  cursor: pointer
+  white-space: nowrap
+
+.nav-button:hover
+  color: #000!important
+  background-color: #ccc!important
+
+.nav-block
+  display: block
+  width: 100%

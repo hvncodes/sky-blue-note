@@ -1,24 +1,21 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>home</title>
-    <meta name="description" content="sky blue note">
-    <meta name="keywords" content="">
-</head>
-<body>
-    <form action="/detail" method="post">
-        Raids! <br>
-        <input type="text" name="title" placeholder="e.g. Tiamat, Bahamut...">
-        <input type="submit" value="&#128269;">
-    </form>
-    {{#if items}}
-        <p>Quests: </p>
-        {{#each items}}
-            <p><a href="/detail?quest={{ quest }}">Lvl {{level}} {{boss}} {{difficulty}}</a></p>
-        {{/each}}
-    {{else}}
-        <p>Content <i>should</i> go here.</p>
-    {{/if}}
-    <pre>{{items}}</pre>
-</body>
-</html>
+<div class="container">
+    <div id="welcome">
+        <div id="image-banner">
+            <img src="assets/misc/takealook.png" alt="Take A Look">
+            <img src="assets/misc/checked.png" alt="Girl with notebook">
+        </div>
+        <h1>Welcome to Sky Blue Note!</h1>
+        <p>To begin, hit the "Select" tab above in the nagivation to start adding raids.</p>
+    </div>
+    <div style="visibility: hidden">
+        <p><a href="/setcookie">/setcookie</a> > assigns sample user data to selectedRaids cookie</p>
+        <p><a href="/getcookie">/getcookie</a> > page that displays selectedRaids cookie as JSON</p>
+        <p><a href="/addtocookie">/addtocookie</a> > adds a static raid to selectedRaids array and update cookie</p>
+        <p><a href="/reset">/reset</a> > reset</p>
+        <p><a href="/text">/text</a> > placeholder</p>
+        <br />
+        <br />
+        <p><a href="/select">/select</a> > Select Raids Page</p>
+        <pre>{{items}}</pre>
+    </div>
+</div>

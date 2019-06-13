@@ -1,0 +1,45 @@
+<div class="container">
+    <h2 class="pageHeading">Quest List</h2>
+    {{#if showPrompt}}
+    <div id="showPrompt">
+        <h1>Wait!</h1>
+        <div id="image-banner">
+            <img src="assets/misc/albacore.png" alt="Picture of a Fish">
+        </div>
+        <h2>Please Add Some Quests!</h2>
+        <a href="/" class="button" id="l-btn">Go Home</a>
+        <a href="/select" class="button" id="r-btn">Add Quests</a>
+    </div>
+    {{/if}}
+    {{#if raids}}
+    <form id="viewForm" action="view" method="post">
+        {{#each raids}}
+        <div class="raidBox">
+            <div class="checkboxDiv {{element}}">
+                <input type="checkbox" name="raid" id="{{quest}}" value="{{quest}}" />
+                <label for="{{quest}}">
+                    
+                    <div class="imageContainer">
+                        <img src="/assets/raids/{{quest}}.jpg" alt="{{name}} Raid Image"/>
+                    </div>
+                    <div class="raidInfo">
+                        <div class="raidName">{{name}}</div>
+                        <div class="raidCost">Cost: {{cost}}AP</div>
+                    </div>
+                    <div class="raidOptions">
+                        <a href="{{url}}" class="button" id="host-btn">Host</a>
+                    </div>
+                    
+                </label>
+            </div>
+        </div>
+        {{/each}}
+    </form>
+    {{/if}}
+</div>
+<a href="/view" class="finishButton" id="viewFormFinish">Finish</a>
+<script>
+    document.getElementById("viewFormFinish").onclick = function() {
+        document.getElementById("viewForm").submit();
+    }
+</script>

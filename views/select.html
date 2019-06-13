@@ -1,0 +1,40 @@
+<div class="container">
+    {{#if msg1}}
+    <div id="flash">
+        <p>{{msg1}} and {{msg2}}</p>
+    </div>
+    <p>raids was not a param sent to render!</p>
+    {{/if}}
+    <h2 class="pageHeading">Select Raids</h2>
+    {{#if raids}}
+    <form action="select" method="post">
+        {{#each raids}}
+        <div class="raidBox">
+            <div class="checkboxDiv {{element}}">
+                <input type="checkbox" name="raid" id="{{quest}}" value="{{quest}}" />
+                <label for="{{quest}}">
+                    
+                    <div class="imageContainer">
+                        <img src="/assets/raids/{{quest}}.jpg" alt="{{name}} Raid Image"/>
+                    </div>
+                    <div class="raidInfo">
+                        <div class="raidName">{{name}}</div>
+                        <div class="raidCost">Cost: {{cost}}AP</div>
+                    </div>
+                    
+                </label>
+            </div>
+        </div>
+        {{/each}}
+    </form>
+    {{/if}}
+    <div style="visibility: hidden">
+        <pre>{{json}}</pre>
+    </div>
+</div>
+<a href="/view" class="finishButton" id="viewFormFinish">Finish</a>
+<script>
+    document.getElementById("viewFormFinish").onclick = function() {
+        document.getElementById("viewForm").submit();
+    }
+</script>

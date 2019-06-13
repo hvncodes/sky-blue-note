@@ -1,0 +1,312 @@
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-top,
+.nav-bottom {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.nav-top {
+  top: 0;
+}
+
+.nav-bottom {
+  bottom: 0;
+  height: 50px;
+}
+.nav-bottom #bottomFill {
+  min-height: 50px;
+  padding: 0px !important;
+}
+
+.nav-blue {
+  color: #fff !important;
+  background-color: #3688f4 !important;
+}
+
+.nav-padding {
+  padding: 8px 16px !important;
+}
+
+.nav-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.nav-button {
+  user-select: none;
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.nav-button:hover {
+  color: #000 !important;
+  background-color: #ccc !important;
+}
+
+.nav-block {
+  display: block;
+  width: 100%;
+}
+
+#showPrompt {
+  text-align: center;
+  position: relative;
+}
+#showPrompt a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  display: inline;
+  text-decoration: none;
+}
+#showPrompt #r-btn, #showPrompt #l-btn {
+  border: 1px solid transparent;
+  border-radius: 3px;
+  color: white;
+  font-size: 14px;
+  padding: 19px 32px;
+  vertical-align: top;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: #127DF2;
+  opacity: 1;
+}
+#showPrompt #r-btn:hover, #showPrompt #l-btn:hover {
+  opacity: 0.9;
+}
+#showPrompt #r-btn {
+  background: #15d683;
+}
+
+.raidBox a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  display: inline;
+  text-decoration: none;
+}
+.raidBox #host-btn {
+  border: 1px solid transparent;
+  border-radius: 3px;
+  color: white;
+  font-size: 14px;
+  padding: 16px 25px;
+  vertical-align: top;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: #127DF2;
+  opacity: 1;
+  float: right;
+}
+.raidBox #host-btn:hover {
+  opacity: 0.9;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #020202;
+  background-color: #fff;
+  width: 100%;
+  min-width: 350px;
+}
+
+.column {
+  float: left;
+}
+
+.column-1 {
+  width: 8.3333333333%;
+}
+
+.column-2 {
+  width: 16.6666666667%;
+}
+
+.column-3 {
+  width: 25%;
+}
+
+.column-4 {
+  width: 33.3333333333%;
+}
+
+.column-5 {
+  width: 41.6666666667%;
+}
+
+.column-6 {
+  width: 50%;
+}
+
+.column-7 {
+  width: 58.3333333333%;
+}
+
+.column-8 {
+  width: 66.6666666667%;
+}
+
+.column-9 {
+  width: 75%;
+}
+
+.column-10 {
+  width: 83.3333333333%;
+}
+
+.column-11 {
+  width: 91.6666666667%;
+}
+
+.column-12 {
+  width: 100%;
+}
+
+.container {
+  padding: 12px;
+  margin: 50px 0;
+}
+
+#welcome {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.pageHeading {
+  margin: 0 0 10px 0;
+}
+
+.fire {
+  background-color: #ffcdd2;
+}
+.fire:hover {
+  background-color: rgba(255, 205, 210, 0.8);
+}
+
+.water {
+  background-color: #bbdefb;
+}
+.water:hover {
+  background-color: rgba(187, 222, 251, 0.8);
+}
+
+.earth {
+  background-color: #d7ccc8;
+}
+.earth:hover {
+  background-color: rgba(215, 204, 200, 0.8);
+}
+
+.wind {
+  background-color: #c8e6c9;
+}
+.wind:hover {
+  background-color: rgba(200, 230, 201, 0.8);
+}
+
+.light {
+  background-color: #ffecb3;
+}
+.light:hover {
+  background-color: rgba(255, 236, 179, 0.8);
+}
+
+.dark {
+  background-color: #d1c4e9;
+}
+.dark:hover {
+  background-color: rgba(209, 196, 233, 0.8);
+}
+
+label {
+  border: 1px solid #ccc;
+  padding: 3px;
+  margin: 0 0 10px;
+  display: block;
+  overflow: auto;
+}
+label:hover {
+  cursor: pointer !important;
+}
+
+input:checked + label {
+  color: white;
+  background-color: #2A86E1;
+}
+
+.checkboxDiv input[type=checkbox] {
+  display: none;
+}
+
+.checkboxDiv .imageContainer {
+  height: 50px;
+  width: 75px;
+  background: red;
+  float: left;
+  margin-right: 3px;
+}
+.checkboxDiv .imageContainer img {
+  max-height: 100px !important;
+  max-width: 150px !important;
+  height: 100% !important;
+  width: 100% !important;
+  object-fit: cover;
+}
+.checkboxDiv .raidInfo {
+  float: left;
+  margin-left: 3px;
+}
+.checkboxDiv .raidInfo .raidName, .checkboxDiv .raidInfo .raidCost {
+  font-size: 16px;
+}
+
+/* Finsh Button */
+.finishButton {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  display: inline;
+  text-decoration: none;
+  background: #15d683;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  font-size: 14px;
+  padding: 12px 25px;
+  color: white;
+  opacity: 1;
+  position: fixed;
+  bottom: 4px;
+  right: 4px;
+  z-index: 2;
+}
+.finishButton:hover {
+  opacity: 0.9;
+}
+
+/*# sourceMappingURL=index.css.map */
